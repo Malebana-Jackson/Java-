@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package arraylists;
+package gps;
 
 /**
  *
@@ -21,11 +21,7 @@ public class WayPoints {
         this.t = t;
     }
 
-    @Override
-    public String toString() {
-        return "WayPoints{" + "x=" + x + ", y=" + y + ", t=" + t + '}';
-    }
-
+ 
     
     
     public double getX() {
@@ -53,15 +49,13 @@ public class WayPoints {
     }
     
     
-    public double calcTravel(double x){
-    
-          
-        
-        
-    return ((x+1)-x)/10; 
-    
-    
+       @Override
+    public String toString() {
+        return "WayPoints{" + "x=" + x + ", y=" + y + ", t=" + t + '}';
     }
+
+    
+
     
     
     
