@@ -16,15 +16,19 @@ import java.io.Serializable;
 public class Person implements Serializable {
     
      transient private String name;
-    private int age;
-
+     private int age;
+     private String gender;
+     private double salary;
+     
     
     public Person(){}
     
     
-    public Person(String name, int age) {
+    public Person(String name, int age, String gender, double salary) {
         this.name = name;
         this.age = age;
+        this.gender = gender;
+        this.salary = salary;
     }
 
     public String getName() {
@@ -43,10 +47,28 @@ public class Person implements Serializable {
         this.age = age;
     }
 
+    public String getGender() {
+        return gender;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
+
+    public double getSalary() {
+        return salary;
+    }
+
+    public void setSalary(double salary) {
+        this.salary = salary;
+    }
+
     @Override
     public String toString() {
-        return "Person{" + "name=" + name + ", age=" + age + '}';
+        return "Person{" + "name=" + name + ", age=" + age + ", gender=" + gender + ", salary=" + salary + '}';
     }
+
+   
     
     
     
