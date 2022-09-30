@@ -15,7 +15,17 @@ public class Seat_Booking_Prog {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        new Seat_Booking_Prog().run();
     }
+    
+    private void run(){
+        Seat seat = new Seat();
+        seat.seat_Value();
+    }
+    
+    
+    
+    
+    
     
 }
